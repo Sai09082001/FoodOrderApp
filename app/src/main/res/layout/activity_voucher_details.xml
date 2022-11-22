@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Ticket.VoucherDetails">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ticket_details"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/box" />
+    <LinearLayout
+        android:paddingHorizontal="18dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/banner"
+        android:layout_height="203dp"
+        />
+    <TextView
+        android:id="@+id/tv_ticket_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobold"
+        android:textSize="21dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="Title"/>
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dash"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="Hiệu lực đến"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 tháng 12 năm 2019"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/robotomedium"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điều khoản và điều kiện"
+            android:textColor="#000"
+            android:fontFamily="@font/robotobold"
+            android:textSize="15dp"
+            android:layout_marginTop="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voucher chỉ áp dung cho các cửa hàng nhất định.
+Bấm sử dung để xem danh sách cửa hàng."
+            android:textColor="#000"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dash"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điều khoản và điều kiện"
+            android:textColor="#000"
+            android:fontFamily="@font/robotobold"
+            android:textSize="15dp"
+            android:layout_marginTop="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voucher chỉ áp dung cho các cửa hàng nhất định.
+Bấm sử dung để xem danh sách cửa hàng."
+            android:textColor="#000"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dash"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SỬ DỤNG VOUCHER"
+            android:textColor="@color/colorTrang"
+            android:background="@drawable/boxbutton2"/>
+    </LinearLayout>
+</LinearLayout>

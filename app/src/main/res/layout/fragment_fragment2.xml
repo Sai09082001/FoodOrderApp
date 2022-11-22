@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login.Premire_Tutorial.Fragment1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="31dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginHorizontal="44dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logonew"  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freehani"
+            android:textColor="#000"
+            android:textSize="23dp"
+            android:textAlignment="center"
+            android:text="Thế giới ẩm thực"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freehani"
+            android:textColor="#000"
+            android:textSize="23dp"
+            android:textAlignment="center"
+            android:text="Trong tầm tay bạn"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:src="@drawable/slide2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các bạn có thể dễ dàng đặt món ăn mình yêu thích thông qua ứng dụng đa nền tảng"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_marginTop="24dp"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="109dp"
+            android:layout_height="31dp"
+            android:src="@drawable/textlogo" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_inactive"/>
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_active"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/dot_inactive"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/dot_inactive"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

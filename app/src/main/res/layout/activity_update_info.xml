@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Menu.Personal.UpdateInfo">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_back_update"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa hồ sơ"
+            android:fontFamily="@font/robotobold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19dp"/>
+       <Button
+           android:layout_marginRight="15dp"
+           android:layout_width="63dp"
+           android:layout_height="35dp"
+           android:fontFamily="@font/robotobold"
+           android:text="LƯU"
+           android:textColor="#fff"
+           android:background="@drawable/boxbutton2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        >
+        <EditText
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập họ và tên" />
+        <EditText
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập email" />
+        <EditText
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập số điện thoại" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CẬP NHẬT THÔNG TIN"
+            android:textColor="@color/colorTrang"
+            android:background="@drawable/boxbutton"/>
+    </LinearLayout>
+</LinearLayout>

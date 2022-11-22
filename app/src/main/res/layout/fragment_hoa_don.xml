@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Menu.HoaDonFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobold"
+            android:text="Đơn hàng hiện tại"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/btn_lichsuhoadon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lịch sử đơn hàng"
+            android:textAlignment="center"
+            android:textColor="@color/colorCAM" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="289dp"
+                android:layout_height="224dp"
+                android:src="@drawable/packagez"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiện tại chưa có đơn hàng nào"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="#000"
+                android:textSize="21dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="21dp"
+                        android:textColor="#000"
+                        android:text="Hãy đặt món ăn tại"/>
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="13dp"
+                        android:src="@drawable/logochu"/>
+                </LinearLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

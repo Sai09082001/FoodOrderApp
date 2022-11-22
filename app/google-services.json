@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "342501202445",
+    "project_id": "knfood-50c56",
+    "storage_bucket": "knfood-50c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342501202445:android:bf4e77cd73e7d7c0311344",
+        "android_client_info": {
+          "package_name": "org.o7planning.knfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342501202445-fmo3v45a0ah24lpink9mh5sp06f24u1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.o7planning.knfood",
+            "certificate_hash": "ef2bc2b1c8a1b539160a1b1a1f9d4b5dd1506569"
+          }
+        },
+        {
+          "client_id": "342501202445-3tgijdprt43rlp5uo5m5q1imgnh7ccsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbt0ZILiSSQ_vh6pYcFwnb5QL3_Uj_BaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342501202445-3tgijdprt43rlp5uo5m5q1imgnh7ccsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

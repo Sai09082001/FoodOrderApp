@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.Messenger.MessRoom">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_mess"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/box"
+        app:title="Username"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/ed_timkiem"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:hint="Nhập tin nhắn"
+        android:background="@drawable/box"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="GỬI"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/boxbutton"/>
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>

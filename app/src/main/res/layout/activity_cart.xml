@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.Cart.CartActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_cart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/box"
+        app:title="Giỏ hàng"
+        />
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/diemdau" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Địa điểm giao hàng"
+                    android:textColor="#707070"
+                    android:textSize="13dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="100 Dương Quảng Hàm"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="39dp"
+                android:src="@drawable/logonew" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ed_timkiem"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:hint="Thêm ghi chú vào địa điểm giao hàng"
+            android:background="@drawable/box"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng của bạn"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginVertical="7dp"
+            android:src="@drawable/dash"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cart_list_food"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_cart_xacnnhan"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:text="XÁC NHẬN ĐƠN HÀNG"
+        android:textColor="@color/colorTrang"
+        android:background="@drawable/boxbutton"/>
+
+
+</LinearLayout>
+</ScrollView>

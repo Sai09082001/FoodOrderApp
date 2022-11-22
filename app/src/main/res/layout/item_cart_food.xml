@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/cart_img"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:src="@drawable/mipho"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_cart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/robotobold"/>
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="287.000đ"
+                android:fontFamily="@font/robotobold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+               android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:background="@drawable/boxbutton2"
+                    android:text="+"/>
+                <TextView
+                    android:id="@+id/tv_cart_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="1"/>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/boxbutton2"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

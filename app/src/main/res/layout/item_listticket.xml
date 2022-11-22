@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/banner"
+    android:layout_width="match_parent"
+   android:layout_gravity="center_horizontal"
+    android:layout_height="260dp">
+
+    <LinearLayout
+        android:id="@+id/boxticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/box_ticket"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Ưu đãi 35% tối đa 10.000đ"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/iconclock" />
+
+            <TextView
+                android:id="@+id/date_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotoregular"
+                android:text="Hạn dùng 23 thg 12, 2019"
+                android:textColor="#000"
+
+            android:textSize="16dp" />
+            <Button
+                android:layout_width="88dp"
+                android:layout_height="26dp"
+                android:layout_weight="1"
+                android:text="Sử dụng"
+                android:background="@drawable/boxbutton2"
+                android:textColor="@color/colorTrang"
+                android:gravity="center"
+                android:fontFamily="@font/robotobold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

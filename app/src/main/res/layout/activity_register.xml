@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logonew" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="31dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ed_displayname"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:hint="Họ và tên"
+            android:layout_marginTop="20dp"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:background="@drawable/box"/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Email đăng nhập" />
+        <EditText
+            android:id="@+id/ed_password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập mật khẩu" />
+
+        <EditText
+            android:id="@+id/ed_repassword"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/box"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:layout_marginTop="20dp"
+            android:hint="Nhập lại mật khẩu" />
+        <TableRow
+            android:gravity="center|start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn là"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/radioGroup_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Customer" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipper" />
+            </RadioGroup>
+        </TableRow>
+        <Button
+            android:id="@+id/btn_dangky"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký tài khoản"
+            android:textColor="@color/colorTrang"
+            android:background="@drawable/boxbutton"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khi ấn đăng ký, bạn đồng ý với các"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điều khoản và chính sách"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/tv_quaylaidn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="#2537D8"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

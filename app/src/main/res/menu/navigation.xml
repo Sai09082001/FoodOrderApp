@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/icon_home"
+        android:icon="@drawable/iconhome"
+        android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/icon_hoadon"
+        android:icon="@drawable/hoadon"
+        android:title="Hóa đơn" />
+
+    <item
+        android:id="@+id/icon_nhantin"
+        android:icon="@drawable/iconnhantin"
+        android:title="Nhắn tin" />
+
+    <item
+        android:id="@+id/icon_canhan"
+        android:icon="@drawable/iconcanhan"
+        android:title="Cá nhân" />
+</menu>
