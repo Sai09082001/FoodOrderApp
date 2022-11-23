@@ -1,72 +1,106 @@
 package org.o7planning.knfood.Adapter;
 
 import android.content.Context;
+import android.graphics.Typeface;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.o7planning.knfood.Model.Messenger;
+import com.bumptech.glide.Glide;
+
+import org.o7planning.knfood.AdapterListener;
+import org.o7planning.knfood.Constants;
+import org.o7planning.knfood.Model.Conversation;
+import org.o7planning.knfood.Model.Message;
+import org.o7planning.knfood.Model.User;
 import org.o7planning.knfood.R;
 
 import java.util.ArrayList;
 
 public class MessengerAdapter extends RecyclerView.Adapter<MessengerAdapter.ViewHolder>{
-    public ArrayList<Messenger> dsMess;
-    private View.OnClickListener mOnItemClickListener;
-    public MessengerAdapter(ArrayList<Messenger> dsMess){this.dsMess=dsMess;}
+    private final ArrayList<Conversation> conversations;
+    private AdapterListener listener;
+
+
+    public MessengerAdapter(ArrayList<Conversation> conversations) {
+        this.conversations = conversations;
+    }
+
+    public void setListener(AdapterListener listener) {
+        this.listener = listener;
+    }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
-
-        // Inflate the custom layout
-        View contactView = inflater.inflate(R.layout.item_messenger, parent, false);
-
-        // Return a new holder instance
-        MessengerAdapter.ViewHolder viewHolder = new MessengerAdapter.ViewHolder(contactView);
-        return viewHolder;
+    public MessengerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_messenger, parent, false);
+        return new MessengerAdapter.ViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Messenger mess = dsMess.get(position);
-        TextView tv_username= holder.tv_username;
-        TextView tv_content = holder.tv_content;
-        TextView tv_status = holder.tv_status;
-        ImageView avarta = holder.avarta;
-        tv_username.setText(mess.getUsername());
-        tv_content.setText(mess.getContent());
-        tv_status.setText("Trạng thái: "+mess.getStatus());
+    public void onBindViewHolder(@NonNull MessengerAdapter.ViewHolder holder, int position) {
+        Conversation con = conversations.get(position);
+        User data = con.getOtherUser();
+        Message lastMess = con.getLastMessage();
+
+        holder.userName.setText(data.getUserName());
+        holder.userLastMess.setText(lastMess.getMessage());
+        holder.userTimeSeen.setText(lastMess.getTimeStamp());
+
+        Typeface typeface = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            typeface = holder.itemView.getResources().getFont(R.font.freehani);
+        }
+        if ((!lastMess.getSeen()) && (lastMess.getSenderUid().equals(data.getId()))) {
+            holder.userLastMess.setTypeface(typeface);
+        }
+
+        if (data.getStatus().equals(Constants.ONLINE)) {
+            holder.tvStatusUser.setText("Trạng thái: Online");
+        } else {
+            holder.tvStatusUser.setText("Trạng thái: Offline");
+        }
+
+        holder.u = data;
 
     }
-    public void setOnItemClickListener(View.OnClickListener itemClickListener) {
-        mOnItemClickListener = itemClickListener;
-    }
+
     @Override
     public int getItemCount() {
-        return dsMess.size();
+        return conversations.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
-    public TextView tv_username;
-    public TextView tv_content;
-    public TextView tv_status;
-    public  ImageView avarta;
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        public ImageView userAvatar;
+        public TextView userName, userLastMess, userTimeSeen , tvStatusUser;
+        public LinearLayout lnItemMess;
+        public User u;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            itemView.setTag(this);
-            itemView.setOnClickListener(mOnItemClickListener);
-            tv_username=itemView.findViewById(R.id.mess_username);
-            tv_content=itemView.findViewById(R.id.mess_content);
-            tv_status=itemView.findViewById(R.id.mess_status);
-            avarta=itemView.findViewById(R.id.mess_avarta);
+            userAvatar = itemView.findViewById(R.id.mess_avarta);
+            userName = itemView.findViewById(R.id.mess_username);
+            userLastMess = itemView.findViewById(R.id.mess_content);
+            lnItemMess = itemView.findViewById(R.id.ln_item_mess);
+            tvStatusUser = itemView.findViewById(R.id.mess_status);
+            userTimeSeen = itemView.findViewById(R.id.tv_time_seen);
+            lnItemMess.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener != null) {
+                        listener.onClick(u);
+                    }
+                }
+            });
+
         }
     }
 }

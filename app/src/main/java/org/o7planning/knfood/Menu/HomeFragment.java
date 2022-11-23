@@ -20,6 +20,7 @@ import org.o7planning.knfood.Function.DatMonAn;
 import org.o7planning.knfood.Model.FoodHome;
 import org.o7planning.knfood.R;
 import org.o7planning.knfood.Ticket.TicketList;
+import org.o7planning.knfood.map.MapActivity;
 
 import java.util.ArrayList;
 
@@ -27,10 +28,11 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-ArrayList<FoodHome> listfood;
-RecyclerView rvlist_food;
-ImageView img_ticket;
-LinearLayout btn_datmonan;
+    private ArrayList<FoodHome> listfood;
+    private RecyclerView rvlist_food;
+    private ImageView img_ticket;
+    private ImageView ivMap;
+    private LinearLayout btn_datmonan;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -39,6 +41,7 @@ LinearLayout btn_datmonan;
             final ViewGroup root = (ViewGroup)inflater.inflate(R.layout.fragment_home, container, false);
             rvlist_food= root.findViewById(R.id.rv_listfood);
             img_ticket= root.findViewById(R.id.img_ticket);
+            ivMap= root.findViewById(R.id.iv_map);
             FoodHome fd = new FoodHome("abc","Món Châu Á");
             FoodHome fd2 = new FoodHome("avc","Món Châu Âu");
         FoodHome fd3 = new FoodHome("avc","Món Châu Mỹ");
@@ -54,6 +57,13 @@ LinearLayout btn_datmonan;
             public void onClick(View v) {
                 Intent i = new Intent(root.getContext(), TicketList.class);
                 startActivity(i);
+            }
+        });
+        ivMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MapActivity.class);
+                startActivity(intent);
             }
         });
         //click chuyển sang ticket list

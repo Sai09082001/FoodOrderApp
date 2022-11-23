@@ -1,6 +1,7 @@
 package org.o7planning.knfood.Login;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.Observer;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -66,14 +67,22 @@ public class RegisterActivity extends BaseActivity<RegisterViewModel> implements
 //                            tk.setDisplayName(displayname.getText().toString());
 //                            tkdao.insertAccount(tk);
                            // registerAccount(username.getText().toString(),password.getText().toString());
-                           mModel.handleSignUp(user,pass,name);
-                    }
-                    break;
+                    mModel.handleSignUp(user, pass, name);
+                    mModel.getIsRegis().observe(this, new Observer<Boolean>() {
+                        @Override
+                        public void onChanged(Boolean aBoolean) {
+                            if (aBoolean) {
+                                Toast.makeText(getApplicationContext(), "Đăng ký thành công", Toast.LENGTH_LONG).show();
+                                onBackPressed();
+                            }
+                        }
+                    });
                 }
-//            case R.id.tv_quaylaidn_register:
-//                Intent i2 = new Intent(RegisterActivity.this, LoginActivity.class);
-//                startActivity(i2);
-//                break;
+                    break;
+                case R.id.tv_quaylaidn_register:
+                onBackPressed();
+                break;
+        }
 
     }
 

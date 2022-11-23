@@ -3,101 +3,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu.Messenger.TinNhanFragment">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    tools:context=".Menu.Messenger.HomeMessFragment">
     <LinearLayout
-        android:paddingVertical="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/box"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tin nhắn"
-            android:fontFamily="@font/robotobold"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="19dp"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:src="@drawable/textlogo"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="10dp">
-        <TextView
-            android:layout_marginVertical="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="14dp"
-            android:textColor="#000"
-            android:text="Admin Ân's Food"
-            android:fontFamily="@font/robotobold"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginHorizontal="10dp"
-        android:padding="10dp"
-        android:background="@drawable/box"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/logonew" />
+        android:orientation="vertical">
         <LinearLayout
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
             <TextView
+                android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Admin"
+                android:text="Tin nhắn"
                 android:fontFamily="@font/robotobold"
-                android:textColor="#000"/>
-            <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19dp"/>
+            <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trạng thái: Online"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/robotoregular"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:layout_height="26dp"
+                android:src="@drawable/textlogo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp">
             <TextView
+                android:layout_marginVertical="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Vui lòng chờ tôi chờ tôi một chút!..."
-                android:fontFamily="@font/robotoregular"/>
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:text="Admin Ân's Food"
+                android:fontFamily="@font/robotobold"/>
 
         </LinearLayout>
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:fontFamily="@font/robotobold"
-        android:textColor="#000"
-        android:layout_marginVertical="10dp"
-        android:text="Tin nhắn(4)"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_mess_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-      />
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:background="@drawable/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logonew" />
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:fontFamily="@font/robotobold"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái: Online"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Vui lòng chờ tôi chờ tôi một chút!..."
+                    android:fontFamily="@font/robotoregular"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_search_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_search"
+            android:textColor="@color/colorCAM"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Search"
+            android:textSize="18sp"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/rcv_all_user"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:text="Tin nhắn(4)"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/rcv_mess_list"/>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="56dp"
         android:src="@drawable/space"/>
 </LinearLayout>
 

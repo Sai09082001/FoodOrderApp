@@ -3,4 +3,72 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="API_KEY">AIzaSyDIhaYXvMmfWXk8bozAcMPpZC4rrMu8gT8</string>
+
+    <string name="txt_tra_sua_heekcaa">Trà sữa Heekcaa</string>
+    <string name="txt_tra_sua_heekcaa_address">220 Đường Nguyễn Tri Phương, phường 4, quận 10, TP. HCM</string>
+    <string name="txt_tra_sua_heekcaa_content">Heekaa là thương hiệu trà sữa nổi tiếng tại Hồng Kông. Ở Việt Nam, thương hiệu này nổi trội với dòng trà hoa quả được nhiều thực khách ưa chuộng nhờ vào lớp kem cheese sánh mịn hương thơm quyến rũ, ngọt béo vừa phải nên ai cũng mê tít.
+
+Bạn cũng không nên bỏ qua những ly trà sữa có hương vị được pha chế rất riêng như: Trà sữa khoai sọ, trà sữa bơ, trà sữa double oreo, trà sữa đậu đỏ, trà sữa trân châu đường đen,...
+</string>
+
+    <string name="txt_tra_sua_rb">Trà sữa R*B</string>
+    <string name="txt_tra_sua_rb_address">84 Nguyễn Thái Học, phường Cầu Ông Lãnh, quận 1, TP. HCM</string>
+    <string name="txt_tra_sua_rb_content">Quán trà sữa R*B này khá yên tĩnh và thoáng mát nên thích hợp để làm nơi học tập, làm việc hoặc thư giãn sau giờ làm việc. Thực đơn của quán đa dạng, các món nổi bật phải kể đến như: Trà sữa 03 loại thạch, trà sữa oreo choco cream, trà ôlong cream, sữa tươi caramel trân châu pudding, trà sữa vị phô mai pudding trứng, trà sữa olong frogcrash,...
+
+Ngoài nước uống, quán còn phục vụ các món bánh ngọt cho bạn thưởng thức rất hấp dẫn.
+</string>
+
+    <string name="txt_tra_sua_alley">Trà sữa The Alley</string>
+    <string name="txt_tra_sua_alley_address">97 Cộng Hòa, phường 4, quận Tân Bình, TP. HCM</string>
+    <string name="txt_tra_sua_alley_content">The Alley là thương hiệu trà sữa từ Đài Loan, chính thức gia nhập vào thị trường Việt Nam năm 2017 nhưng đã chiếm được thiện cảm của đa số bạn trẻ. Chi nhánh The Alley tại Cộng Hòa có không gian thoáng mát, yên tĩnh với 2 lầu, nên thích hợp để học tập, làm việc.
+
+Các món nước nổi tiếng của thương hiệu này mà bạn nên lựa chọn như: Sữa tươi trân châu đường đen, trà sữa mầm cây, trà sữa kem cheese đường đen, trà sữa trân châu,...
+</string>
+
+    <string name="txt_ga_ran_donchicken">Gà rán Don Chicken </string>
+    <string name="txt_ga_ran_donchicken_address">495 Điện Biên Phủ, Phường 25, Bình Thạnh, TP.HCM </string>
+    <string name="txt_ga_ran_donchicken_content">Nhắc đến những quán gà rán Hàn Quốc có tiếng ở Sài Gòn, nhất định phải lưu ngay cái tên Don Chicken.
+Gà rán của Don không chỉ mềm, thơm, mà sau khi rán còn được quệt thêm rất nhiều loại sốt độc đáo như sốt gia vị, sốt nước tương,…
+
+Chính vì thế mà khi thưởng thức gà, bạn không cần chấm thêm nước mắm đi kèm mà cũng vẫn thấy rất tuyệt vời. Vị cay của ớt, hoà quyện cùng vị béo của phô mai và độ ngọt của thịt gà thì quả thực ăn không gì thích bằng.
+</string>
+
+    <string name="txt_ga_ran_popeyes"> Gà rán Don Popeyes </string>
+    <string name="txt_ga_ran_popeyes_address"> 62 Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7,TP.HCM</string>
+    <string name="txt_ga_ran_popeyes_content"> Gà của Popeyes nổi bật với lớp da được tẩm ướp gia vị đậm đà, thịt gà không khô mà mềm và thơm. Quán sở hữu món gà sốt me cay đang “làm mưa làm gió” trong giới học sinh-sinh viên, bên cạnh đó, Popeyes còn luôn được lòng mọi người bởi quán có rất nhiều ưu đãi và giảm giá phù hợp với túi tiền thực khách.
+</string>
+    <string name="txt_ga_ran_texas"> Gà rán Don Texas Chicken </string>
+    <string name="txt_ga_ran_texas_address"> 217 Nguyễn Văn Cừ, Phường 4, Quận 5, TP.HCM</string>
+    <string name="txt_ga_ran_texas_content"> Là một trong những thương hiệu gà rán nổi tiếng nhất cả nước, Texas Chicken hiện đang có mặt ở hầu hết các quận trung tâm của Sài Gòn. Đã có mặt tại Việt Nam được gần chục năm nhưng Texas vẫn không giảm độ “hot” và ngày càng thu hút đông du khách đến thưởng thức hơn.
+Nổi tiếng nhất tại đây phải kể đến món gà Tomyum được tẩm ướt lớp bột vàng giòn rụm bên ngoài đã làm nên tên tuổi của Texas tại Việt Nam. Đây cũng là món được coi là best seller của quán.
+</string>
+    <string name="txt_healthy_eatmoresalad"> Eat More Salad </string>
+    <string name="txt_healthy_eatmoresalad_address"> 14/25 Hoàng Dư Khương, Phường 12, Quận 10, TP. HCM</string>
+    <string name="txt_healthy_eatmoresalad_content"> Nghe cái tên Eat More Salad thôi cũng đoán được quán chuyên về các món salad. Salad là món ăn quan trọng trong menu ăn healthy. Những món salad của quán chinh phục cả những người "lười ăn rau". Salad của quán trộn bởi rau tươi, kèm các loại thịt giàu protein như: thịt gà, thịt bò, thịt heo, cá ngừ, hay tôm. Nước sốt salad rất ngon, khó tìm được quán salad nào có công thức pha chế độc đáo như thế.
+Đặc biệt, quán còn có những món salad phục vụ người ăn chay như: salad nấm chay. Không chỉ phục vụ mỗi salad, quán còn có cơm gạo lứt, hạt dinh dưỡng, bánh ăn kiêng và nhiều loại sinh tố. Tương tự, Xanh - Lowcarb, Eat More Salad cũng có dịch vụ cung cấp thức ăn theo tuần. Bạn có thể lựa chọn và thay đổi các bữa ăn hàng ngày của mình từ các sản phẩm trong thực đơn. Không nhất thiết phải cố định theo thực đơn quán sắp xếp, bạn có thể liên hệ với quán mỗi ngày để chọn món nào mình thích.
+</string>
+
+    <string name="txt_healthy_gateauhealthy"> Gateau Healthy</string>
+    <string name="txt_healthy_gateauhealthy_address"> 359/1/41 Lê Văn Sỹ, P. 13, Quận 3, TP. HCM </string>
+    <string name="txt_healthy_gateauhealthy_content"> Gateau Health nổi tiếng ở Sài Gòn với những món bánh, thực phẩm khô được chế biến healthy từ những nguyên liệu có giá trị dinh dưỡng, tốt cho sức khỏe với thực đơn đa dạng như bánh mì nguyên cám, bánh mì đen, bánh mì hoa cúc, nui yến mạch được làm từ yến mạch và nước ép rau củ ( cải bó xôi, cà rốt, củ dền, hoa đậu biếc ),...
+Ngoài ra, vào những dịp đặc biệt hay ngày lễ lớn tại Gateau Health còn setup những món ăn được bày biện, trang trí làm quà tặng rất đẹp mắt, đa số là những sản phẩm không đường, ít calo, phù hợp với những bạn đang theo chế độ giảm cân, ăn Lean giảm mỡ … Là nguồn Carb tốt cho mọi bữa ăn. Các sản phẩm bánh mì tại Gateau Health còn cung cấp một lượng chất xơ, đạm cao hơn bột mì trắng hay các loại bánh pha bột mì trắng giúp bạn no lâu hơn, tránh những bữa ăn lẻ nhiều lần trong ngày.
+</string>
+    <string name="txt_com_congamai"> Con Gà Mái </string>
+    <string name="txt_com_congamai_address"> 111 Hoàng Hoa Thám, quận Bình Thạnh, TP. HCM </string>
+    <string name="txt_com_congamai_content"> Con Gà Mái là quán cơm văn phòng ngon Sài Gòn được dân công sở tin tưởng lựa chọn. Món cơm gà chuẩn vị đến từ vùng đất Phú Yên chắc chắn không bao giờ làm bạn thất vọng. Menu ở đây có nhiều các món gà khác nhau như: gà luộc, gà xé, gỏi gà,…
+Đặc  biệt mỗi phần ở đây được bày theo mẹt và trang trí rất bắt mắt. Mỗi mẹt sẽ có 2 đĩa cơm đi kèm, bạn có thể linh hoạt gọi phần theo nhóm được nhé. Thịt gà săn chắc, đúng chuẩn gà thả vườn và không ăn thực phẩm. Món lẩu gà lá é thơm nước mũi cùng vị nước ngọt xương được hầm kĩ lưỡng.
+</string>
+    <string name="txt_com_wagashiart"> Wagashi Art</string>
+    <string name="txt_com_wagashiart_address"> 96A Nguyễn Thị Minh Khai, Phường  6,  Quận 3, TP. HCM </string>
+    <string name="txt_com_wagashiart_content"> Wagashi Art là quán cơm văn phòng ngon Sài Gòn theo phong cách Nhật Bản. Lối trang trí tối giản tạo sự tinh gọn nhẹ nhàng. Khiến không gian như thêm phần rộng rãi và thoải mái cho khách dùng bữa.
+Cơm trưa văn phòng ở đây nổi tiếng ngon và giá cả hợp lý. Menu phong phú với các phần cơm nóng cá kho, thịt heo sốt wagashi,… Nước sốt đậm đà hợp khẩu vị của rất nhiều khách hàng. Đặc biệt là quán phục vụ cả cơm chay nên cực kì tiện lợi cho nhiều thực khách.
+Quán còn phục vụ rất nhiều món tráng miệng như flan dừa, sầu riêng,… Sẽ là sự lựa chọn hợp lý cho một bữa trưa sau nhiều giờ làm việc mệt mỏi.
+</string>
+    <string name="txt_an_vat_banhtrangtronchuvien"> Bánh tráng trộn chú Viên</string>
+    <string name="txt_an_vat_banhtrangtronchuvien_address"> 38 Nguyễn Thượng Hiền, phường 5, quận 3, thành phố Hồ Chí Minh </string>
+    <string name="txt_an_vat_banhtrangtronchuvien_content"> Hàng bánh tráng trộn nổi tiếng nhất Sài Gòn đích thị là của chú Viên rồi bởi công thức ở đây là “độc nhất vô nhị”, chú Viên không sử dụng dầu mỡ, sa tế thông thường để trộn mà sử dụng nước sốt bò đậm đà và cực kỳ hợp với món ăn này. Tất cả nguyên liệu bánh tráng, khô mực, tôm khô, trứng cút, xoài bào sợi, khô bò, đậu phộng, rau răm... được trộn đều cùng nước sốt thần thánh cho tới khi bánh tráng mềm và thấm đều gia vị. Ưu điểm ở đây là sợi bánh tráng không bị dính thành cục khi rưới nước sốt vào nên khá dễ ăn còn điểm trừ là diện tích khá nhỏ nên chủ yếu bán mang về thôi. Bạn nên gọi điện đặt hàng trước khoảng 20-30 phút để khi tới không phải chờ lâu và được chuẩn bị sẵn đồ ăn nhé!
+</string>
+
+
 </resources>

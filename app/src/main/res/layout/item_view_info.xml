@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:padding="50dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@color/grayLight"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_place"
+                android:elevation="5dp"
+                android:src="@drawable/logo2"
+                android:background="@color/colorCAM"
+                android:layout_width="150dp"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:padding="5dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Trà sữa Heekcaa"
+                    android:textSize="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:padding="5dp"
+                    android:textColor="@color/colorCAM"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Đ/c:220 Đường Nguyễn Tri Phương, phường 4, quận 10, TP. HCM"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+        </TableRow>
+        <TextView
+            android:id="@+id/tv_content"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="6"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Heekaa là thương hiệu trà sữa nổi tiếng tại Hồng Kông. Ở Việt Nam, thương hiệu này nổi trội với dòng trà hoa quả được nhiều thực khách ưa chuộng nhờ vào lớp kem cheese sánh mịn hương thơm quyến rũ, ngọt béo vừa phải nên ai cũng mê tít.
+
+Bạn cũng không nên bỏ qua những ly trà sữa có hương vị được pha chế rất riêng như: Trà sữa khoai sọ, trà sữa bơ, trà sữa double oreo, trà sữa đậu đỏ, trà sữa trân châu đường đen,...
+"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+</FrameLayout>

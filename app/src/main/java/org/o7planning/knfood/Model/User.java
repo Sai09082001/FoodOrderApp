@@ -4,6 +4,15 @@ public class User {
     private String id;
     private String userName;
     private String displayName;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getTypeID() {
         return typeID;
@@ -14,10 +23,11 @@ public class User {
     public User() {
     }
 
-    public User(String id, String userName, String displayName, String typeID) {
+    public User(String id, String userName, String displayName,String status,String typeID) {
         this.id = id;
         this.userName = userName;
         this.displayName = displayName;
+        this.status = status;
         this.typeID = typeID;
     }
 

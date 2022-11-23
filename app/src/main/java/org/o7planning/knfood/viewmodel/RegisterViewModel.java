@@ -13,8 +13,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import org.o7planning.knfood.Constants;
 import org.o7planning.knfood.KNFoodApp;
@@ -25,7 +23,12 @@ public class RegisterViewModel extends BaseViewModel {
 
     private MutableLiveData<FirebaseUser> userMutableLiveData;
     private DatabaseReference databaseReference;
-    private StorageReference storageReference;
+
+    public MutableLiveData<Boolean> getIsRegis() {
+        return isRegis;
+    }
+
+    private MutableLiveData<Boolean> isRegis = new MutableLiveData<>(false);
 
     public RegisterViewModel() {
         userMutableLiveData = new MutableLiveData<>();
@@ -40,12 +43,12 @@ public class RegisterViewModel extends BaseViewModel {
         } else  if (email.trim().isEmpty() || name.trim().isEmpty() || password.trim().isEmpty() || cPassword.trim().isEmpty()) {
             errorMessage.postValue("Please fill out the form");
         } else {
-            Toast.makeText(KNFoodApp.getInstance(),"Đăng kí tài khoản thành công",Toast.LENGTH_SHORT).show();
             handleSignUp(email, password, name);
         }
     }
 
     public void handleSignUp(String email, String password, String name){
+        isRegis.postValue(true);
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -62,7 +65,7 @@ public class RegisterViewModel extends BaseViewModel {
     }
 
     public void upUserToDatabase(String uid, String name, String email){
-        User user = new User(uid, email, name,Constants.OFFLINE);
+        User user = new User(uid, email, name,Constants.OFFLINE,"Customer");
         databaseReference.setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

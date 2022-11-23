@@ -5,4 +5,11 @@
     <color name="colorAccent">#15202B</color>
     <color name="colorCAM">#FF8908</color>
     <color name="colorTrang">#fff</color>
+    <color name="online">#90be6d</color>
+    <color name="offline">#d8e2dc</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grayLight">#E7DCDB</color>
+    <color name="orange">#DF763E</color>
+    <color name="red">#E43225</color>
 </resources>

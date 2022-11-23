@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/drawable/space.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_confirm_cart.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_dat_mon_an.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_hoa_don_chi_tiet.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_list_hoa_don.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_main.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_mess_room.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/activity_register.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/all_user_item.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/fragment_tin_nhan.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/item_homefood.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/item_messenger.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/knfood/knfood/knfood/app/src/main/res/layout/item_view_info.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/khang/Desktop/Clone/knfood/knfood/app/src/main/res/drawable/box.xml" value="0.1" />
         <entry key="..\:/Users/khang/Desktop/Clone/knfood/knfood/app/src/main/res/drawable/boxtrang.xml" value="0.1" />
         <entry key="..\:/Users/khang/Desktop/Clone/knfood/knfood/app/src/main/res/layout/activity_dat_mon_an.xml" value="0.1" />

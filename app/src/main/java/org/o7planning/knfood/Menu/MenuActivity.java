@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import org.o7planning.knfood.Menu.Messenger.TinNhanFragment;
+import org.o7planning.knfood.Menu.Messenger.HomeMessFragment;
 import org.o7planning.knfood.Menu.Personal.CaNhanFragment;
 import org.o7planning.knfood.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -46,7 +46,7 @@ public class MenuActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.icon_nhantin:
-                    fragment = new TinNhanFragment();
+                    fragment = new HomeMessFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.icon_canhan:
