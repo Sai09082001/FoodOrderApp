@@ -39,8 +39,8 @@ public ListStoreAdapter(ArrayList<Store> dsstore){this.dsstore=dsstore;}
         TextView tv_rating = holder.tv_rating;
         TextView tv_time = holder.tv_time;
         TextView tv_content = holder.tv_content;
-        tv_title.setText(store.getTitle());
-        tv_rating.setText(store.getRating()+"");
+        tv_title.setText(store.getName());
+        tv_rating.setText(store.getRating());
         tv_time.setText(store.getTime());
         tv_content.setText(store.getContent());
     }

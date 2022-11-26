@@ -1,9 +1,9 @@
 package org.o7planning.knfood.Model;
 
-public class MonTrangMieng {
+public class FoodDesserts {
     private String img;
 
-    public MonTrangMieng(String img, String namefood) {
+    public FoodDesserts(String img, String namefood) {
         this.img = img;
         this.namefood = namefood;
     }

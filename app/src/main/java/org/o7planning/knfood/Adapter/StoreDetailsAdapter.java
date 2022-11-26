@@ -4,12 +4,12 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.o7planning.knfood.Menu.Store.StoreDetails;
 import org.o7planning.knfood.Model.Food;
 import org.o7planning.knfood.R;
 
@@ -20,6 +20,15 @@ public class StoreDetailsAdapter extends RecyclerView.Adapter<StoreDetailsAdapte
     private View.OnClickListener mOnItemClickListener;
     public StoreDetailsAdapter(List<Food> listfood){this.listfood=listfood;}
 
+    public void setOnItemClick(OnItemClick event) {
+        callBack = event;
+    }
+
+    private OnItemClick callBack;
+
+    public interface OnItemClick {
+        void onItemClick(Food data);
+    }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,11 +47,12 @@ public class StoreDetailsAdapter extends RecyclerView.Adapter<StoreDetailsAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Food food = listfood.get(position);
         TextView tv_title=holder.tv_title;
-        TextView tv_original_price = holder.tv_original_price;
+        TextView tv_food_note = holder.tv_food_note;
         TextView tv_price = holder.tv_price;
-        tv_title.setText(food.getTitle());
-        tv_original_price.setText("Giá gốc "+food.getOriginal_price());
-        tv_price.setText(food.getPrice()+"đ");
+        tv_title.setText(food.getfName());
+        tv_food_note.setText(food.getNote());
+        tv_price.setText(food.getPrice()+" VND");
+        holder.food = listfood.get(position);
     }
     public void setOnItemClickListener(View.OnClickListener itemClickListener) {
         mOnItemClickListener = itemClickListener;
@@ -54,16 +64,23 @@ public class StoreDetailsAdapter extends RecyclerView.Adapter<StoreDetailsAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder{
     public TextView tv_title;
-    public TextView tv_original_price;
+    public TextView tv_food_note;
     public TextView tv_price;
-    public TextView img;
+    public Button btAddFood;
+    public Food food;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
         tv_title=itemView.findViewById(R.id.tv_store_food_title);
-        tv_original_price=itemView.findViewById(R.id.tv_store_food_original_price);
+        tv_food_note=itemView.findViewById(R.id.tv_store_food_note);
         tv_price=itemView.findViewById(R.id.tv_store_food_price);
+        btAddFood=itemView.findViewById(R.id.btn_store_food_add);
             itemView.setTag(this);
-            itemView.setOnClickListener(mOnItemClickListener);
+            btAddFood.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callBack.onItemClick(food);
+                }
+            });
         }
     }
 

@@ -14,8 +14,8 @@ import java.util.List;
 public class TAIKHOANDAO {
     private SQLiteDatabase db;
     public TAIKHOANDAO(Context context){
-        DBHelper helper = new DBHelper(context);
-        db = helper.getWritableDatabase();
+//        DBHelper helper = new DBHelper(context);
+//        db = helper.getWritableDatabase();
     }
 
     @SuppressLint("range")

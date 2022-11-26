@@ -1,0 +1,20 @@
+{
+    "id" : 1,
+    "name": "Cơm ngon mẹ nấu",
+    "keypass": "cơm",
+    "rating": "4.5",
+    "time": "2.3km (15 phút)",
+    "content": "Cơm ngon sạch sẽ được chế biến công phu",
+    "foods" : [
+        "Phở gà",
+        "Phở bò"
+    ],
+    "prices" : [
+        "25000",
+        "30000"
+    ],
+    "notes" : [
+        "Phở gà ngon",
+        "Phở bò ngon"
+    ]
+}

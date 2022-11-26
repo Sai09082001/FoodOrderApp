@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import org.o7planning.knfood.Adapter.HomeFoodAdapter;
-import org.o7planning.knfood.Function.DatMonAn;
+import org.o7planning.knfood.Function.OrderFoodActivity;
 import org.o7planning.knfood.Model.FoodHome;
 import org.o7planning.knfood.R;
 import org.o7planning.knfood.Ticket.TicketList;
@@ -72,7 +71,7 @@ public class HomeFragment extends Fragment {
         btn_datmonan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               startActivity(new Intent(v.getContext(), DatMonAn.class));
+               startActivity(new Intent(v.getContext(), OrderFoodActivity.class));
             }
         });
         //Nút Đặt món ăn

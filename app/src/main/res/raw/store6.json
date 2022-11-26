@@ -1,0 +1,38 @@
+{
+  "id" : 6,
+  "name":"Popeyes",
+  "keypass":"Thức ăn nhanh",
+  "rating":"5",
+  "time" : "2.3km (15 phút)",
+  "content": "Gà của Popeyes nổi bật với lớp da được tẩm ướp gia vị đậm đà, thịt gà không khô mà mềm và thơm",
+  "foods" : [
+    "Combo gà tắm nước mắm",
+    "Combo gà giòn cay",
+    "Combo gà giòn không cay",
+    "Combo gà giòn không xương",
+    "Gà Popcorn",
+    "Donus Tôm",
+    "Khoai tây nghiền",
+    "Khoai tây chiên"
+  ],
+  "prices" : [
+    "91000",
+    "81000",
+    "81000",
+    "67000",
+    "24000",
+    "29000",
+    "38000",
+    "35000"
+  ],
+  "notes" : [
+    "2 miếng gà tắm nước mắm (Phần gà được phục vụ ngẫu nhiên) + 1 nước coca",
+    "2 miếng gà giòn cay (Phần gà được phục vụ ngẫu nhiên) + 1 nước coca",
+    "2 miếng gà giòn không cay (Phần gà được phục vụ ngẫu nhiên) + 1 nước coca",
+    "2 miếng gà giòn không xương + 1 nước coca",
+    "1 Gà Popcorn",
+    "1 Donus Tôm",
+    "1 khoai tây nghiền",
+    "1 khoai tây chiên"
+  ]
+}

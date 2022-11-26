@@ -42,7 +42,7 @@ public class MenuActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.icon_hoadon:
-                    fragment = new HoaDonFragment();
+                    fragment = new BillFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.icon_nhantin:

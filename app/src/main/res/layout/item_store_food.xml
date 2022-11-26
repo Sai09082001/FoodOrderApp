@@ -32,7 +32,7 @@
             android:fontFamily="@font/robotobold"
             android:textSize="13dp"/>
         <TextView
-            android:id="@+id/tv_store_food_original_price"
+            android:id="@+id/tv_store_food_note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Giá gốc 29.000"

@@ -1,0 +1,35 @@
+{
+  "id": 3,
+  "name": "Trà sữa R&B",
+  "keypass": "Trà sữa",
+  "rating": "4.5",
+  "time": "4km (20 phút)",
+  "content": "Thực đơn của quán đa dạng, trà sữa béo ngậy thơm ngon",
+  "foods": [
+    "Trà sữa oreo cream - size M",
+    "Ruulong cream",
+    "Trà sữa ngũ cốc cream - size M",
+    "Trà sữa chocolate cream - size M",
+    "Hồng trà sữa kem phô mai vị pudding - size M",
+    "Lục trà sữa 3 loại thạch - size L",
+    "Hồng trà dâu nhiệt đới"
+  ],
+  "prices": [
+    "58000",
+    "60000",
+    "58000",
+    "50000",
+    "60000",
+    "60000",
+    "60000"
+  ],
+  "notes": [
+    "Trà sữa kết hợp với oreo cream",
+    "Trà olong thanh long đỏ",
+    "Trà sữa kết hopự với ngũ cốc",
+    "Trà sữa vị socola",
+    "Hồng trà sữa với lớp phủ kem phomai vị pudding phía trên",
+    "Lục trà sữa đã có sẵn 3 loại thạch là trân châu đen, pudding trứng, Sương sáo",
+    "Hồng trà kèm với dâu tây"
+  ]
+}

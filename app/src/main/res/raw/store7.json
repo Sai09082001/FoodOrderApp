@@ -1,0 +1,41 @@
+{
+  "id" : 7,
+  "name":"Texas Chicken",
+  "keypass":"Thức ăn nhanh",
+  "rating":"4.5",
+  "time" : "2.3km (15 phút)",
+  "content": "Là một trong những thương hiệu gà rán nổi tiếng nhất cả nước",
+  "foods" : [
+    "Combo Giòn Tan A",
+    "Bánh cuộn Mexicana",
+    "1 Miếng Gà Sốt Cay Ramyeon",
+    "Gà Giòn Có Xương",
+    "Gà Giòn Không Xương",
+    "Bánh quy bơ mật ong - 1 cái",
+    "Khoai tây nghiền",
+    "Bắp cải trộn",
+    "Khoai tây chiên"
+  ],
+  "prices" : [
+    "85000",
+    "66000",
+    "49000",
+    "39000",
+    "89000",
+    "12000",
+    "29000",
+    "29000",
+    "29000"
+  ],
+  "notes" : [
+    "2 miếng gà có xương + 1 nước ngọt + 2 tương ớt + 1 tương cà",
+    "Bánh cuộn Mexicana + 1 tương cà",
+    "1 Miếng Gà Sôts Cay Ramyeon + 1 tương ớt + 1 tương cà",
+    "1 Miếng Gà Giòn Có Xương + 1 tương ớt + 1 tương cà",
+    "8 Miếng Gà Giòn Không Xương + 1 tương ớt + 1 tương cà",
+    "1 cái bánh quy bơ mật ông",
+    "1 phần khoai tây nghiền",
+    "1 phần bắp cải trộn",
+    "1 phần khoai tây chiên"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id" : 8,
+  "name":"Eat More Salad",
+  "keypass":"Healthy food",
+  "rating":"4.5",
+  "time" : "10km (35 phút)",
+  "content": "Nghe cái tên Eat More Salad thôi cũng đoán được quán chuyên về các món salad.",
+  "foods" : [
+    "Chicken Caesar salad (Gà, Bacon) 384 kcal",
+    "Cobb Salad (Gà, heo xông khói, trứng)",
+    "Beetroot Salad - Salad Củ Dền (chay) - 328 kcal",
+    "Nicoise Salad (Cá ngừ)",
+    "Greeek Salad - Salad Hy Lạp (Chay) - 260 kcal"
+  ],
+  "prices" : [
+    "99000",
+    "45000",
+    "99000",
+    "99000",
+    "89000"
+  ],
+  "notes" : [
+    "Thành phần: xà lách romaine, lườn gà nướng, thịt xông khói, pho mai parmesan, sốt caesar",
+    "Thành phần: Lườn gà nướng, bơ, trứng, thịt ba chỉ xông khói nướng, cà chua bi, xà lách romaine, sốt thousand",
+    "Thành phần: Củ dền, xà lách xoăn, hạt óc chó, pho mai feta, cà chua bi, hành tây caramel, sốt mù tạt mật ong",
+    "Thành phần: Cá ngừ, trứng, oliu, khoai lang, đậu, ớt đà lạt, hành tây caramel, cà chua, xà lách xoăn, giấm balsamic",
+    "Thành phần: Phô mai feta, dưa chuột, ớt đà lạt, cà chua bi, oliu, xà lách xoăn, dầu giấm balsamic"
+  ]
+}

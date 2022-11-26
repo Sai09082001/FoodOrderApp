@@ -2,8 +2,6 @@ package org.o7planning.knfood.Menu.Messenger;
 
 
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -12,13 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
 
 import org.o7planning.knfood.Adapter.AllUserAdapter;
 import org.o7planning.knfood.Adapter.MessengerAdapter;
@@ -30,7 +22,6 @@ import org.o7planning.knfood.R;
 import org.o7planning.knfood.base.BaseFragment;
 import org.o7planning.knfood.viewmodel.HomeMessViewModel;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -143,7 +134,7 @@ public class HomeMessFragment extends BaseFragment<HomeMessViewModel> {
     }
 
     private void gotoChatFragment(User user) {
-        Intent i = new Intent(getContext(),MessRoom.class);
+        Intent i = new Intent(getContext(), RoomMessActivity.class);
         startActivity(i);
     }
 

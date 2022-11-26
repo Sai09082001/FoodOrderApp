@@ -49,6 +49,7 @@
                     android:textSize="16dp"
                     android:fontFamily="@font/robotomedium"/>
                 <TextView
+                    android:id="@+id/tv_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"

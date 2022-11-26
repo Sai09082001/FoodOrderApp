@@ -1,0 +1,29 @@
+{
+  "id" : 5,
+  "name":"Don Chicken",
+  "keypass":"Thức ăn nhanh",
+  "rating":"4.9",
+  "time" : "3km (15 phút)",
+  "content": "Gà rán phong cách Hàn Quốc",
+  "foods" : [
+    "Gà Phô Mai Tuyết",
+    "Gà Không Xương Sốt Phô Mai Cay",
+    "Gà Rán Sốt Gia Vị",
+    "Gà Không Xương Nướng",
+    "Gà Hallamayo"
+  ],
+  "prices" : [
+    "199800",
+    "355320",
+    "199800",
+    "182520",
+    "189000"
+  ],
+  "notes" : [
+    "Gà Phô Mai Tuyết",
+    "Gà Không Xương kết hợp Sốt Phô Mai Cay",
+    "Gà Rán tẩm Sốt Gia Vị độc quyền",
+    "Gà Không Xương Nướng",
+    "Gà sốt Hallamayo"
+  ]
+}

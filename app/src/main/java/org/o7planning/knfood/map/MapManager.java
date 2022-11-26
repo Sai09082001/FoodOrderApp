@@ -43,7 +43,6 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
     private Marker myPos;
     private OnActionCallBack mCallBack;
 
-
     private List<PlaceEntity> listPlace;
 
     private MapManager() {
@@ -85,6 +84,7 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
         // for dummy data
         initPlaces();
         addPlaceToMap();
+       // getLocalAddress();
     }
 
     private GoogleMap.InfoWindowAdapter initWindow() {

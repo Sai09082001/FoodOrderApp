@@ -21,7 +21,7 @@ Toolbar tb;
         tb.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(),ListHoaDon.class));
+                startActivity(new Intent(v.getContext(), HistoryBillActivity.class));
             }
         });
         //custom toolbar

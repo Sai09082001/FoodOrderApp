@@ -9,15 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.o7planning.knfood.Model.MonTrangMieng;
+import org.o7planning.knfood.Model.FoodDesserts;
 import org.o7planning.knfood.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class GoiY_MontrangmiengAdapter extends RecyclerView.Adapter<GoiY_MontrangmiengAdapter.ViewHolder> {
-    ArrayList<MonTrangMieng> listdesert;
-    public GoiY_MontrangmiengAdapter(List<MonTrangMieng> listdesert){this.listdesert= (ArrayList<MonTrangMieng>) listdesert;}
+    ArrayList<FoodDesserts> listdesert;
+    public GoiY_MontrangmiengAdapter(List<FoodDesserts> listdesert){this.listdesert= (ArrayList<FoodDesserts>) listdesert;}
 
     @NonNull
     @Override
@@ -35,7 +35,7 @@ public class GoiY_MontrangmiengAdapter extends RecyclerView.Adapter<GoiY_Montran
 
     @Override
     public void onBindViewHolder(@NonNull GoiY_MontrangmiengAdapter.ViewHolder holder, int position) {
-        MonTrangMieng mtm = listdesert.get(position);
+        FoodDesserts mtm = listdesert.get(position);
         TextView tv_namefood = holder.tv_namefood;
         tv_namefood.setText(mtm.getNamefood());
     }

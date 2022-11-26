@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Menu.Store.ListStore">
+    tools:context=".Menu.Store.ListStoreActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Menu.Cart.ConfirmCart">
+    tools:context=".Menu.Cart.ConfirmCartActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -57,14 +57,28 @@
                         android:fontFamily="@font/robotoregular"
                         android:textColor="#000"
                         android:text="Giá tiền (ước tính)"/>
-                    <TextView
+                    <TableRow
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="end"
-                        android:layout_weight="1"
-                        android:text="14.000đ"
-                        android:fontFamily="@font/robotobold"
-                        android:textColor="#000"/>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_sum_bill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text="14.000"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text=" VND"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="#000"/>
+                    </TableRow>
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,14 +92,27 @@
                         android:fontFamily="@font/robotoregular"
                         android:textColor="#000"
                         android:text="Khuyến mãi"/>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
                     <TextView
+                        android:id="@+id/tv_discount_bill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="end"
                         android:layout_weight="1"
-                        android:text="14.000đ"
+                        android:text="15000"
                         android:fontFamily="@font/robotobold"
                         android:textColor="@color/colorCAM"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text=" VND"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="@color/colorCAM"/>
+                    </TableRow>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -99,14 +126,27 @@
                         android:fontFamily="@font/robotoregular"
                         android:textColor="#000"
                         android:text="Phí vận chuyển"/>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
                     <TextView
+                        android:id="@+id/tv_ship_bill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="end"
                         android:layout_weight="1"
-                        android:text="14.000đ"
+                        android:text="15000"
                         android:fontFamily="@font/robotobold"
                         android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text=" VND"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="#000"/>
+                    </TableRow>
                 </LinearLayout>
                 <ImageView
                     android:layout_width="match_parent"
@@ -126,14 +166,27 @@
                         android:fontFamily="@font/robotobold"
                         android:textColor="#000"
                         android:text="Tổng thanh toán"/>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
                     <TextView
+                        android:id="@+id/tv_bill_done"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="end"
                         android:layout_weight="1"
-                        android:text="14.000đ"
+                        android:text="14.000"
                         android:fontFamily="@font/robotobold"
                         android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:text=" VND"
+                            android:fontFamily="@font/robotobold"
+                            android:textColor="#000"/>
+                    </TableRow>
                 </LinearLayout>
                 <Button
                     android:id="@+id/btn_cart_dathang"

@@ -1,0 +1,33 @@
+{
+  "id" : 4,
+  "name": "Trà sữa The Alley",
+  "keypass": "Trà sữa",
+  "rating":"5.0",
+  "time" : "10km (25 phút)",
+  "content": "Thương hiệu trà sữa từ Đài Loan",
+  "foods" : [
+    "Sữa Tươi Kem Trứng Trân Châu Đường Đen - Size M",
+    "Matcha Trân Châu Đường Đen - Size M",
+    "Sữa Tươi Trân Châu Đường Đen - Size M",
+    "Ca Cao Trân Châu Đường Đen - Size M",
+    "Sữa Chua Nếp Than Trân Châu Đường Đen - Size M",
+    "Thanh Trà Nho - Size M"
+  ],
+  "prices" : [
+    "52000",
+    "52000",
+    "49600",
+    "54400",
+    "36000",
+    "44000"
+  ],
+  "notes" : [
+    "Sữa Tươi Kem Trứng Trân Châu Đường Đen",
+    "Matcha Trân Châu Đường Đen",
+    "Sữa Tươi Trân Châu Đường Đen",
+    "Ca Cao Trân Châu Đường Đen",
+    "Sữa Chua Nếp Than Trân Châu Đường Đen",
+    "Lục Trà Dâu",
+    "Thanh Trà Nho"
+  ]
+}

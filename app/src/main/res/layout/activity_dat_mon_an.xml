@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu.HoaDonFragment">
+    tools:context=".Menu.BillFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,8 +37,7 @@
                 android:layout_height="40dp"
                 android:src="@drawable/cart"/>
         </LinearLayout>
-        //header
-        // 3 hàng menu
+
         <LinearLayout
             android:gravity="center"
             android:layout_marginTop="10dp"
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <LinearLayout
-                android:id="@+id/btn_chaua"
+                android:id="@+id/btn_com"
                 android:gravity="center"
                 android:layout_width="100dp"
                 android:layout_weight="1"
@@ -201,7 +200,8 @@
                 <ImageView
                     android:layout_width="53dp"
                     android:layout_height="53dp"
-                    android:src="@drawable/haisan"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_gateau_healthy"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
                     android:textAlignment="center"
                     android:fontFamily="@font/robotoregular"
                     android:layout_marginTop="10dp"
-                    android:text="Hải sản"/>
+                    android:text="Healthy food"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/btn_dohop"

@@ -14,18 +14,18 @@ import android.widget.LinearLayout;
 import org.o7planning.knfood.Adapter.GoiY_MontrangmiengAdapter;
 import org.o7planning.knfood.Menu.Cart.CartActivity;
 import org.o7planning.knfood.Menu.MenuActivity;
-import org.o7planning.knfood.Model.MonTrangMieng;
+import org.o7planning.knfood.Model.FoodDesserts;
 import org.o7planning.knfood.R;
-import org.o7planning.knfood.Menu.Store.ListStore;
+import org.o7planning.knfood.Menu.Store.ListStoreActivity;
 
 import java.util.ArrayList;
 
-public class DatMonAn extends AppCompatActivity {
-    EditText ed_timkiem;
-    LinearLayout btn_chaua;
-    ImageView btn_backhome,btn_cart;
-    ArrayList<MonTrangMieng> dsdesert = new ArrayList<>();
-    RecyclerView rv_list_desert;
+public class OrderFoodActivity extends AppCompatActivity {
+    private EditText ed_timkiem;
+    private LinearLayout btn_chaua;
+    private ImageView btn_backhome,btn_cart;
+    private ArrayList<FoodDesserts> dsdesert = new ArrayList<>();
+    private RecyclerView rv_list_desert;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +33,9 @@ public class DatMonAn extends AppCompatActivity {
         ed_timkiem = findViewById(R.id.ed_timkiem);
         btn_backhome = findViewById(R.id.btn_backhome);
         rv_list_desert = findViewById(R.id.rv_montrangmieng);
-        MonTrangMieng mtm= new MonTrangMieng("sda","Cơm gà trứng");
-        MonTrangMieng mtm2= new MonTrangMieng("sda","Mì hải sản");
-        MonTrangMieng mtm3= new MonTrangMieng("sda","Phở bò tươi");
+        FoodDesserts mtm= new FoodDesserts("sda","Cơm gà trứng");
+        FoodDesserts mtm2= new FoodDesserts("sda","Mì hải sản");
+        FoodDesserts mtm3= new FoodDesserts("sda","Phở bò tươi");
         dsdesert.add(mtm); dsdesert.add(mtm2);dsdesert.add(mtm3);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rv_list_desert.setLayoutManager(layoutManager);
@@ -43,11 +43,11 @@ public class DatMonAn extends AppCompatActivity {
         rv_list_desert.setAdapter(adapter);
         // list mon trang miệng
         // click vào menu vào danh sách cửa hàng
-        btn_chaua = findViewById(R.id.btn_chaua);
+        btn_chaua = findViewById(R.id.btn_com);
         btn_chaua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), ListStore.class));
+                startActivity(new Intent(v.getContext(), ListStoreActivity.class));
             }
         });
         // click vào menu vào danh sách cửa hàng

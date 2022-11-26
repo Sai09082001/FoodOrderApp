@@ -1,0 +1,38 @@
+{
+  "id" : 10,
+  "name":"Con gà mái - Cơm gà Phú Yên",
+  "keypass":"Cơm",
+  "rating":"4.5",
+  "time" : "2.3km (15 phút)",
+  "content": "Món cơm gà chuẩn vị đến từ vùng đất Phú Yên chắc chắn không bao giờ làm bạn thất vọng. ",
+  "foods" : [
+    "Cơm gà đặc biệt",
+    "Cơm gà xé phay",
+    "Cơm gà xé trứng non",
+    "Mẹt gà 2 người + Canh gà lá giang",
+    "Gỏi gà xé phay + Cháo",
+    "Canh gà lá giang",
+    "Bún gà lá é ớt sim",
+    "Gà nguyên con (Gà chín)"
+  ],
+  "prices" : [
+    "60000",
+    "49000",
+    "59000",
+    "218000",
+    "95000",
+    "25000",
+    "59000",
+    "380000"
+  ],
+  "notes" : [
+    "1 phần cơm gà đặc biệt gồm gà xé, lòng, trứng ",
+    "Cơm gà xé",
+    "1 phần cơm gà gồm gà xé, trứng non",
+    "Mẹt dành cho 2 người ăn + canh gà lá giang",
+    "Gỏi xà xé + cháo",
+    "Canh gà lá giang",
+    "Bún gà lá é ớt sim",
+    "1 con gà"
+  ]
+}

@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Menu.HoaDonFragment">
+    tools:context=".Menu.BillFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +32,19 @@
             android:textAlignment="center"
             android:textColor="@color/colorCAM" />
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rcv_history_bill"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
         <LinearLayout
+            android:id="@+id/ln_non_bill"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
@@ -52,26 +63,28 @@
                 android:fontFamily="@font/robotoregular"
                 android:textColor="#000"
                 android:textSize="21dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="6dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="21dp"
-                        android:textColor="#000"
-                        android:text="Hãy đặt món ăn tại"/>
-                    <ImageView
-                        android:layout_width="109dp"
-                        android:layout_height="31dp"
-                        android:layout_marginLeft="13dp"
-                        android:src="@drawable/logochu"/>
-                </LinearLayout>
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="21dp"
+                    android:textColor="#000"
+                    android:text="Hãy đặt món ăn tại"/>
+                <ImageView
+                    android:layout_width="109dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/logochu"/>
+            </LinearLayout>
 
 
         </LinearLayout>
+    </FrameLayout>
+
 </LinearLayout>

@@ -1,0 +1,32 @@
+{
+  "id" : 2,
+  "name": "Trà sữa Heekcaa",
+  "keypass": "Trà sữa",
+  "rating": "4.5",
+  "time": "3 km (15 phút)",
+  "content": "Trà sữa Hồng Kông",
+  "foods" : [
+    "Trà sữa truyền thống",
+    "Trà sữa matcha",
+    "Trà sữa Heekcaa (Hồng Trà Sữa Đặc Biệt)",
+    "Trà sữa vị Nướng (non Topping)",
+    "Bánh tráng mắm ruốc",
+    "Trân châu đen"
+  ],
+  "prices" : [
+    "25000",
+    "2500",
+    "40000",
+    "20000",
+    "35000",
+    "5000"
+  ],
+  "notes" : [
+    "Trà sữa vị truyền thống đã có sẵn trân châu đen",
+    "Trà sữa vị matcha đã có sẵn trân châu đen",
+    "Trà sữa Heekca đặc biệt đã sẵn trân châu đen, trân châu trắng, bánh flan",
+    "Trà sữa vị nướng với hương vị Trà Olong rang đặc biệt, chưa kèm theo topping",
+    "1 bịch bánh tráng mắm ruốc",
+    "Topping trân châu đen"
+    ]
+}

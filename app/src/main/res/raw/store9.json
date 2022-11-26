@@ -1,0 +1,29 @@
+{
+  "id" : 9,
+  "name":"Gateau Healthy",
+  "keypass":"Healthy food",
+  "rating":"4.5",
+  "time" : "7km (20 phút)",
+  "content": "Gateau Health nổi tiếng ở Sài Gòn với những món bánh, thực phẩm khô được chế biến healthy.",
+  "foods" : [
+    "Hạt điều",
+    "Bơ đậu phộng",
+    "Granola Matcha",
+    "Granola Chocolate",
+    "Granola Basic"
+  ],
+  "prices" : [
+    "48000",
+    "162000",
+    "131000",
+    "125000",
+    "120000"
+  ],
+  "notes" : [
+    "1 phần",
+    "Bơ đậu phộng",
+    "Bánh Granola vị matcha",
+    "Bánh Granola vị sô cô la",
+    "Bánh Granola vị truyền thống"
+  ]
+}

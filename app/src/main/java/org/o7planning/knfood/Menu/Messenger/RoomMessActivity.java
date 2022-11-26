@@ -7,16 +7,33 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import org.o7planning.knfood.Adapter.ChatAdapter;
 import org.o7planning.knfood.Menu.MenuActivity;
+import org.o7planning.knfood.Model.User;
 import org.o7planning.knfood.R;
+import org.o7planning.knfood.base.BaseActivity;
+import org.o7planning.knfood.viewmodel.RoomMessViewModel;
 
 
-public class MessRoom extends AppCompatActivity {
-Toolbar tb;
-@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mess_room);
+public class RoomMessActivity extends BaseActivity<RoomMessViewModel> {
+    private Toolbar tb;
+    private User receiverUser;
+    private String senderUserUid;
+    private ChatAdapter chatAdapter;
+
+
+    @Override
+    protected Class<RoomMessViewModel> getClassViewModel() {
+        return RoomMessViewModel.class;
+    }
+
+    @Override
+    protected int getLayoutID() {
+        return R.layout.activity_mess_room;
+    }
+
+    @Override
+    protected void initViews() {
         tb=findViewById(R.id.tb_mess);
         tb.setNavigationIcon(R.drawable.ic_back);
         tb.setTitle("username"+"");

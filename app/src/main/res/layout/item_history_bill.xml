@@ -12,19 +12,19 @@
     android:background="@drawable/boxbutton"
       >
     <ImageView
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/hoadon"/>
     <TextView
-        android:id="@+id/tv_mahoadon"
+        android:id="@+id/tv_date_bill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mã hóa đơn"
         android:fontFamily="@font/robotobold"
         android:textColor="@color/colorTrang"
         android:textSize="15dp"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginStart="16dp"/>
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:background="@drawable/box">
         <LinearLayout
             android:layout_weight="1"
-            android:layout_marginLeft="17dp"
+            android:layout_marginStart="16dp"
             android:gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -47,10 +47,10 @@
                 android:textSize="15dp"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
-                android:id="@+id/tv_lichsu_ngaythang"
+                android:id="@+id/tv_note_bill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ngày tháng"
+                android:text="Note bill"
                 android:fontFamily="@font/robotoregular"
                 android:textColor="#000"/>
             <TextView
@@ -62,7 +62,7 @@
                 android:textColor="@color/colorCAM"
                 android:textSize="17dp"/>
             <TextView
-                android:id="@+id/tv_lichsu_trangthai"
+                android:id="@+id/tv_bill_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Trạng thái"
@@ -71,7 +71,7 @@
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
-            android:layout_marginRight="17dp"
+            android:layout_marginEnd="16dp"
             android:gravity="center_vertical|right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -86,12 +86,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_marginRight="7dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/star"/>
                 <TextView
-                    android:id="@+id/tv_lichsu_rating"
+                    android:id="@+id/tv_bill_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.6"

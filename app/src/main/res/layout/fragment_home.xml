@@ -78,17 +78,16 @@
             android:layout_weight="1"
             android:background="@drawable/box">
             <ImageView
-                android:id="@+id/iv_map"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/dathang"/>
+                android:src="@drawable/ic_discount_home"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:textAlignment="center"
                 android:fontFamily="@font/robotoregular"
-                android:text="Đặt món ăn"/>
+                android:text="Mã khuyến mãi"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="center"
@@ -99,16 +98,17 @@
             android:layout_weight="1"
             android:background="@drawable/box">
             <ImageView
+                android:id="@+id/iv_map"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/dathang"/>
+                android:src="@drawable/ic_place_home"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:textAlignment="center"
                 android:fontFamily="@font/robotoregular"
-                android:text="Đặt món ăn"/>
+                android:text="Vị trí cửa hàng"/>
         </LinearLayout>
     </LinearLayout>
     /*card khuyen mai
