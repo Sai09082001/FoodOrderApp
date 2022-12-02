@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import org.o7planning.knfood.Model.Food;
+import org.o7planning.knfood.Model.Voucher;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         String sql = "CREATE TABLE foods("+
                 "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
                 "fName TEXT,note TEXT,price TEXT,date TEXT,status TEXT)";
+        String sql1 = "CREATE TABLE vouchers("+
+                "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                "title TEXT,time TEXT,status TEXT)";
         sqLiteDatabase.execSQL(sql);
+        sqLiteDatabase.execSQL(sql1);
     }
 
     @Override
@@ -55,6 +60,21 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         }
         return list;
     }
+    public List<Voucher> getVoucherAll(){
+        List<Voucher> list = new ArrayList<>();
+        SQLiteDatabase st = getReadableDatabase();
+        String order = "time DESC";
+        Cursor rs = st.query("vouchers",null,null,
+                null,null,null,order);
+        while (rs != null && rs.moveToNext()) {
+            int id = rs.getInt(0);
+            String title = rs.getString(1);
+            String time = rs.getString(2);
+            String status = rs.getString(3);
+            list.add(new Voucher(id,title,time,status));
+        }
+        return list;
+    }
 
     public long addFood (Food food) {
         ContentValues values = new ContentValues();
@@ -65,6 +85,14 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         values.put("status",food.getStatus());
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         return sqLiteDatabase.insert("foods",null,values);
+    }
+    public long addVoucher (Voucher voucher) {
+        ContentValues values = new ContentValues();
+        values.put("title",voucher.getTitle());
+        values.put("time",voucher.getTime());
+        values.put("status",voucher.getStatus());
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        return sqLiteDatabase.insert("vouchers",null,values);
     }
 
     public List<Food> searchByFName (String key) {

@@ -49,6 +49,7 @@
                 android:textColor="#000"
                 android:text="Hiệu lực đến"/>
             <TextView
+                android:id="@+id/tv_voucher_time_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="23 tháng 12 năm 2019"

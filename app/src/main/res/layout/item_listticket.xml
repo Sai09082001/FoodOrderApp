@@ -17,7 +17,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_ticket"
+            android:id="@+id/tv_title_voucher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -42,7 +42,7 @@
                 android:src="@drawable/iconclock" />
 
             <TextView
-                android:id="@+id/date_ticket"
+                android:id="@+id/tv_time_voucher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -52,9 +52,10 @@
                 android:textColor="#000"
 
             android:textSize="16dp" />
-            <Button
+            <TextView
+                android:id="@+id/tv_status_voucher"
                 android:layout_width="88dp"
-                android:layout_height="26dp"
+                android:layout_height="28dp"
                 android:layout_weight="1"
                 android:text="Sử dụng"
                 android:background="@drawable/boxbutton2"

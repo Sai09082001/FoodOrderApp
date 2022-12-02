@@ -11,6 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.o7planning.knfood.Model.Food;
 import org.o7planning.knfood.Model.Store;
+import org.o7planning.knfood.Model.Voucher;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -107,6 +108,29 @@ public class CommonUtils {
             e.printStackTrace();
         }
         return listFood;
+    }
+    public ArrayList<Voucher> convertListVoucher (String jsonString) {
+        ArrayList<Voucher> listVoucher = new ArrayList<>();
+        JSONObject jsonRoot = null;
+        try {
+            jsonRoot = new JSONObject(jsonString);
+            JSONArray jsonArray = jsonRoot.getJSONArray("title");
+            String[] titles = new String[jsonArray.length()];
+            JSONArray jsonArray1 = jsonRoot.getJSONArray("time");
+            String[] times = new String[jsonArray.length()];
+            JSONArray jsonArray2 = jsonRoot.getJSONArray("status");
+            String[] statuses = new String[jsonArray.length()];
+
+            for(int i=0;i < jsonArray.length();i++) {
+                titles[i] = jsonArray.getString(i);
+                times[i] = jsonArray1.getString(i);
+                statuses[i] = jsonArray2.getString(i);
+                listVoucher.add(new Voucher(titles[i],times[i],statuses[i] ));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return listVoucher;
     }
     public boolean isExistPref(String key) {
         SharedPreferences pref=KNFoodApp.getInstance().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);

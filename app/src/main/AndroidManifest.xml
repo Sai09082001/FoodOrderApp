@@ -25,7 +25,7 @@
         <activity android:name=".Menu.Store.ListStoreActivity"/>
         <activity android:name=".Function.OrderFoodActivity" />
         <activity android:name=".Ticket.VoucherDetails" />
-        <activity android:name=".Ticket.TicketList" />
+        <activity android:name=".Ticket.VoucherActivity" />
         <activity android:name=".Menu.MenuActivity" />
         <activity android:name=".Login.Premire_Tutorial.Premire" />
         <activity android:name=".Login.GetPassword" />

@@ -21,11 +21,16 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.o7planning.knfood.CommonUtils;
 import org.o7planning.knfood.Menu.MenuActivity;
+import org.o7planning.knfood.Model.Voucher;
 import org.o7planning.knfood.R;
+import org.o7planning.knfood.SQLite.SQLiteHelper;
 import org.o7planning.knfood.SQLite.TAIKHOANDAO;
 import org.o7planning.knfood.base.BaseActivity;
 import org.o7planning.knfood.viewmodel.LoginViewModel;
+
+import java.util.List;
 
 public class LoginActivity extends BaseActivity<LoginViewModel> implements View.OnClickListener {
     private Button btn_dangnhap,btn_dangky;
@@ -34,6 +39,7 @@ public class LoginActivity extends BaseActivity<LoginViewModel> implements View.
     private RadioButton radioCus;
     private RadioButton radioShip;
     private FirebaseAuth mAuth;
+    private SQLiteHelper db;
 
     @Override
     protected Class<LoginViewModel> getClassViewModel() {
@@ -50,6 +56,7 @@ public class LoginActivity extends BaseActivity<LoginViewModel> implements View.
         tv_quenmk=findViewById(R.id.tv_quenmatkhau);
         findViewById(R.id.btn_dangnhap).setOnClickListener(this);
         findViewById(R.id.btn_dangky).setOnClickListener(this);
+        db = new SQLiteHelper(this);
         username = findViewById(R.id.ed_username);
         password = findViewById(R.id.ed_password);
         radioCus = findViewById(R.id.radioButton_male);
@@ -95,12 +102,9 @@ public class LoginActivity extends BaseActivity<LoginViewModel> implements View.
             case R.id.btn_dangnhap:
                 String user = username.getText().toString().trim();
                 String pass = password.getText().toString().trim();
-            //    TAIKHOANDAO tkdao = new TAIKHOANDAO(this);
                 if(user.equals("")||pass.equals("")){
                     Toast.makeText(this, "Vui lòng nhập tên tài khoản hoặc mật khẩu", Toast.LENGTH_LONG).show();
                 }else{
-                 //   Boolean checklogin = tkdao.checkLogin(user,pass);
-                  //  signIn(user,pass);
                     signInUser(user,pass);
                 }
                 break;
@@ -112,6 +116,12 @@ public class LoginActivity extends BaseActivity<LoginViewModel> implements View.
     }
 
     private void signInUser(String email,String password){
+        List<Voucher> voucherList = CommonUtils.getInstance().convertListVoucher(
+                CommonUtils.getInstance().getJsonStore(R.raw.voucher));
+        Log.i("KMFG", "onCreateView: "+voucherList.toString());
+        for (int i = 0; i < voucherList.size(); i++) {
+            db.addVoucher(voucherList.get(i));
+        }
         mModel.signIn(email, password);
     }
 

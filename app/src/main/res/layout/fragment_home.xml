@@ -78,6 +78,7 @@
             android:layout_weight="1"
             android:background="@drawable/box">
             <ImageView
+                android:id="@+id/iv_voucher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_discount_home"/>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".Ticket.TicketList">
+    tools:context=".Ticket.VoucherActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_ticket"
         android:layout_width="match_parent"
@@ -17,5 +17,5 @@
         android:paddingHorizontal="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv_listticket"/>
+        android:id="@+id/rcv_voucher"/>
 </LinearLayout>
