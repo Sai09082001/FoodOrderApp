@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -17,11 +18,13 @@ import org.o7planning.knfood.Menu.MenuActivity;
 import org.o7planning.knfood.Model.FoodDesserts;
 import org.o7planning.knfood.R;
 import org.o7planning.knfood.Menu.Store.ListStoreActivity;
+import org.o7planning.knfood.Ticket.VoucherActivity;
 
 import java.util.ArrayList;
 
 public class OrderFoodActivity extends AppCompatActivity {
     private EditText ed_timkiem;
+    private Button btDatNgay;
     private LinearLayout btn_chaua;
     private ImageView btn_backhome,btn_cart;
     private ArrayList<FoodDesserts> dsdesert = new ArrayList<>();
@@ -33,6 +36,13 @@ public class OrderFoodActivity extends AppCompatActivity {
         ed_timkiem = findViewById(R.id.ed_timkiem);
         btn_backhome = findViewById(R.id.btn_backhome);
         rv_list_desert = findViewById(R.id.rv_montrangmieng);
+        btDatNgay = findViewById(R.id.btn_datngay);
+        btDatNgay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OrderFoodActivity.this, VoucherActivity.class));
+            }
+        });
         FoodDesserts mtm= new FoodDesserts("sda","Cơm gà trứng");
         FoodDesserts mtm2= new FoodDesserts("sda","Mì hải sản");
         FoodDesserts mtm3= new FoodDesserts("sda","Phở bò tươi");

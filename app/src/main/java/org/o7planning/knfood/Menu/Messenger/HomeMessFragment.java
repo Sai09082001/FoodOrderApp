@@ -135,6 +135,7 @@ public class HomeMessFragment extends BaseFragment<HomeMessViewModel> {
 
     private void gotoChatFragment(User user) {
         Intent i = new Intent(getContext(), RoomMessActivity.class);
+        i.putExtra("user",user);
         startActivity(i);
     }
 

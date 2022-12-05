@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.o7planning.knfood.Login.LoginActivity;
 import org.o7planning.knfood.R;
 
 /**
@@ -43,6 +44,10 @@ public class CaNhanFragment extends Fragment {
         btn_logout.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               FirebaseAuth.getInstance().signOut();
+               Intent intent = new Intent(getActivity(), LoginActivity.class);
+               startActivity(intent);
+               getActivity().finish();
                Toast.makeText(v.getContext(), "Đăng xuất", Toast.LENGTH_SHORT).show();
            }
         });

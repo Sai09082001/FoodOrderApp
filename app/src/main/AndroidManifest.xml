@@ -15,7 +15,7 @@
         android:roundIcon="@drawable/logo3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu.Personal.UpdateInfo"></activity>
+        <activity android:name=".Menu.Personal.UpdateInfo" />
         <activity android:name=".Menu.Messenger.RoomMessActivity" />
         <activity android:name=".Menu.Cart.ConfirmCartActivity" />
         <activity android:name=".Menu.Cart.CartActivity" />

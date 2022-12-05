@@ -29,9 +29,8 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     FirebaseUser currentUser;
     private Message clickedMess;
 
-    public ChatAdapter(ArrayList<Message> messages, String receiverUri) {
+    public ChatAdapter(ArrayList<Message> messages) {
         messageArrayList = messages;
-        this.receiverUri = receiverUri;
     }
 
     @NonNull
@@ -52,7 +51,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         Message msg = messageArrayList.get(position);
         holder.showMessage.setText(msg.getMessage());
         holder.data = msg;
-        Glide.with(holder.itemView.getContext()).load(Uri.parse(receiverUri)).into(holder.receiverAvatar);
+    //    Glide.with(holder.itemView.getContext()).load(Uri.parse(receiverUri)).into(holder.receiverAvatar);
         holder.timeText.setText(msg.getTimeStamp());
         if (position == messageArrayList.size() - 1) {
             if (msg.getSeen()){

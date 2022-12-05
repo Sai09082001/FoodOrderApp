@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -36,6 +37,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView rvlist_food;
     private ImageView img_ticket;
     private ImageView ivMap,ivVoucher;
+    private Button btDatNgay;
     private LinearLayout btn_datmonan;
 
     public HomeFragment() {
@@ -47,6 +49,7 @@ public class HomeFragment extends Fragment {
             rvlist_food= root.findViewById(R.id.rv_listfood);
             img_ticket= root.findViewById(R.id.img_ticket);
             ivMap= root.findViewById(R.id.iv_map);
+            btDatNgay = root.findViewById(R.id.btn_datngay);
             ivVoucher= root.findViewById(R.id.iv_voucher);
             FoodHome fd = new FoodHome("abc","Món Châu Á");
             FoodHome fd2 = new FoodHome("avc","Món Châu Âu");
@@ -78,6 +81,12 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), VoucherActivity.class);
                 startActivity(intent);
+            }
+        });
+        btDatNgay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),VoucherActivity.class));
             }
         });
         //click chuyển sang ticket list
